@@ -1,0 +1,2 @@
+# Transactions and Concurrency
+The SQL demonstrates commit and rollback. Unique registration constraints prevent duplicates under concurrent requests; foreign keys protect referential integrity. For a concurrency evidence test, open two sessions: Session A begins a transaction and performs a write without committing; Session B attempts a write and observe lock/wait behavior. Capture real outputs. Engine-specific behavior varies.

@@ -1,0 +1,2 @@
+# Query Optimisation Notes
+Indexes are created on columns used to filter registration rows (course_id, semester, academic_year) and to join/look up registrations by student_id. Use EXPLAIN QUERY PLAN in SQLite or EXPLAIN in MySQL to inspect whether an index is used. Compare execution time and plan before/after indexing using the same dataset and environment. Avoid claiming a quantified speed-up without measurements.
